@@ -3,14 +3,14 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 '''
-ret,dst = cv2.threshold(sec,thresh,maxval,type)
+ret,dst = cv2.threshold(src,thresh,maxval,type)
 src:输入图
 dst:输出图
 thresh：阈值
 maxval：当像素超过阈值所赋予的值
-type:二值化类型的操作有五种
-cv2.THRESH_BINARY       超过阈值部分取maxval（最大值）
-cv2.THRESH_BINARY_INV   上一个的反转
+type:阈值类型的操作有五种
+cv2.THRESH_BINARY       超过阈值部分取maxval（最大值） 二值化
+cv2.THRESH_BINARY_INV   上一个的反转 二值化
 cv2.THRESH_TRUNC        大于阈值部分设为阈值，否则不变
 cv2.THRESH_TOZERO       大于阈值的部分不变，否则设为0
 cv2.THRESH_TOZERO_INV   上一个的反转
